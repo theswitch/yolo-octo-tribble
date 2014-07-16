@@ -150,8 +150,6 @@ int main(int argc, char** argv)
 
         // bind vertex array object
         glBindVertexArray(vao[currVB]);
-        // bind buffer to draw from
-        glBindBuffer(GL_ARRAY_BUFFER, vbo[currVB]);
         // bind the other buffer to receive transform feedback
         glBindBufferBase(GL_TRANSFORM_FEEDBACK_BUFFER, 0, vbo[currTFB]);
 
